@@ -9,14 +9,22 @@
 </head>
 
 <body>
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#login">Login</a>
-  <a href="#register">Register</a>
-</div>
+<div class="container">
+    <div class="navbar">
+      <a href="/#">Home</a>
+      {% if user.is_authenticated %}
+      <a href="/users/profile">Profile</a>
+      <a href="/users/logout">Logout</a>
+      {% else %}
+      <a href="/users/login">Login</a>
+      <a href="/users/signup">Register</a>
+      {% endif %}
+    </div>
 
-<div class="main">
-    {% block content %}{% endblock %}
+    <div class="main">
+        {% block content %}{% endblock %}
+    </div>
+
 </div>
 </body>
 

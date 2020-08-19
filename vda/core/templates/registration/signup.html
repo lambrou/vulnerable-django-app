@@ -1,0 +1,39 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+  {% if form.errors %}
+    <p>Please try again.</p>
+  {% endif %}
+  
+  {% if next %}
+    {% if user.is_authenticated %}
+      <p>Your account doesn't have access to this page. To proceed,
+      please login with an account that has access.</p>
+    {% else %}
+      <p>Please login to see this page.</p>
+    {% endif %}
+  {% endif %}
+  <div class="cardForm">
+  <form method="post">
+    {% csrf_token %}
+    {% for field in form %}
+      <table>
+        {% if 'confirmation' in field.label_tag %}
+          <tr><td>Confirm :</td>
+        {% else %}
+          <tr><td>{{ field.label_tag }}</td>
+        {% endif %}
+          <td>{{ field }}</td></tr>
+        </tr></table>
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+    {% endfor %}
+    <button type="submit" class="loginButton">Sign up</button>
+  </form>
+  
+  <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+  </div>
+{% endblock %}

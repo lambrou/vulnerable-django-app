@@ -1,5 +1,6 @@
 body {
-  background-color: #2B3D41
+  background-color: #2B3D41;
+  padding-top: 3vw;
 }
 .navbar {
   overflow: hidden;
@@ -23,6 +24,36 @@ body {
   color: black;
 }
 
-.main {
-  margin-top: 30px; 
+.cardForm {
+  background-color: #83A0A0;
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  margin: auto;
+  margin-top: 10vw;
+}
+.loginButton {
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    background:linear-gradient(to bottom, #00456e 5%, #445761 100%);
+    background-color:#445761;
+    border-radius:3px;
+    border:1px solid #124d77;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #154682;
+    margin-left: 7vw;
+}
+.loginButton:active {
+    position:relative;
+    top:1px;
+}
+
+table {
+  border-spacing: 15px;
+  border-collapse: separate;
 }
