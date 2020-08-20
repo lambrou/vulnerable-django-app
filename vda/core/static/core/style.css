@@ -31,6 +31,7 @@ body {
   width: 20vw;
   margin: auto;
   margin-top: 10vw;
+  white-space:pre-wrap;
 }
 .loginButton {
     box-shadow:inset 0px 1px 0px 0px #54a3f7;
@@ -52,7 +53,19 @@ body {
     position:relative;
     top:1px;
 }
+.stdout {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 20vw;
+  margin: auto;
+  margin-top: 1vw;
+  white-space:pre-wrap;
+  overflow-y: scroll;
+  overflow-x: scroll;
 
+}
 table {
   border-spacing: 15px;
   border-collapse: separate;
