@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
 import subprocess
 from django.views.decorators.csrf import csrf_exempt
+from django.templatetags.static import static
 
 def index(request):
     return render(request, 'core/index.html', None)
@@ -44,3 +45,22 @@ def changepass(request):
             context = { "msg": 'Passwords did not match.' }
         return render(request, 'user/changepass.html', context)
     return render(request, 'user/changepass.html', None)
+
+def filerunner(request):
+    if request.method == 'GET':
+        file = request.GET.get('file')
+        if (file):
+            procOut = subprocess.check_output(['python', file], shell=True)
+            context = { 
+                "stdout": procOut.decode(),
+                "file1": "dt.py",
+                "file2": "version.py",
+                "file3": "fibonacci.py"
+            }
+            return render(request, 'utils/filerunner.html', context)
+    context = {
+        "file1": "dt.py",
+        "file2": "version.py",
+        "file3": "fibonacci.py"
+    }
+    return render(request, 'utils/filerunner.html', context)

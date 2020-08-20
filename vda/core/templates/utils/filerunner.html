@@ -1,0 +1,19 @@
+{% extends "core/base.html" %}
+{% block content %}
+{% load static %}
+
+<div class="cardForm">
+<form>
+  <table>
+    <tr>
+      <td><a href="/utils/filerunner?file=core/static/scripts/{{ file1 }}">| {{ file1 }} |</a></td>
+      <td><a href="/utils/filerunner?file=core/static/scripts/{{ file2 }}">| {{ file2 }} |</a></td>
+      <td><a href="/utils/filerunner?file=core/static/scripts/{{ file3 }}">| {{ file3 }} |</a></td>
+    </tr>
+  </table>
+</form>
+</div>
+<div class="stdout">
+  <p style="font-size: 10px; padding-left: 3px;">{{ stdout }}</p>
+</div>
+{% endblock %}
