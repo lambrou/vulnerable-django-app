@@ -9,4 +9,6 @@ urlpatterns = [
     path('users/profile', views.profile, name='signup'),
     path('utils/testconn', views.testconn, name='testconn'),
     path('utils/filerunner', views.filerunner, name='filerunner'),
+    path('utils/userlookup', views.userlookup, name='userlookup'),
+    path('utils/guestbook', views.guestbook, name='guestbook'),
 ]

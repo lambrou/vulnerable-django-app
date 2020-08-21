@@ -5,6 +5,10 @@ from django.shortcuts import render, redirect
 import subprocess
 from django.views.decorators.csrf import csrf_exempt
 from django.templatetags.static import static
+from django.contrib.auth.models import User
+from core.models import Guestbook
+from django.utils import timezone
+
 
 def index(request):
     return render(request, 'core/index.html', None)
@@ -64,3 +68,25 @@ def filerunner(request):
         "file3": "fibonacci.py"
     }
     return render(request, 'utils/filerunner.html', context)
+
+def userlookup(request):
+    if request.method == 'POST':
+        uname = request.POST.get('uname')
+        query = User.objects.raw('SELECT * from "auth_user" WHERE "auth_user"."username" = "' + uname + '"')
+        context = { "stdout": query }
+        return render(request, 'utils/userlookup.html', context)
+    return render(request, 'utils/userlookup.html', None)
+
+def guestbook(request):
+    
+    if request.method == 'POST':
+        uname = request.POST.get('uname')
+        umsg = request.POST.get('umsg')
+        gbook = Guestbook(first_name=uname, user_message=umsg, pub_date=timezone.now())
+        gbook.save()
+    posts = Guestbook.objects.all()
+    if posts:
+        context = { "posts": posts }
+    else:
+        context = { None: None }
+    return render(request, 'utils/guestbook.html', context)
