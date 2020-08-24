@@ -65,7 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![vulnerable-django-app Screen Shot][product-screenshot]](https://raw.githubusercontent.com/lambrou/vulnerable-django-app/master/vulnerable-django-app/core/static/core/vdss.png)
+[![vulnerable-django-app Screen Shot][https://raw.githubusercontent.com/lambrou/vulnerable-django-app/master/vulnerable-django-app/core/static/core/vdss.png]]()
 
 
 ### Built With
@@ -133,18 +133,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lambrou/repo.svg?style=flat-square
-[contributors-url]: https://github.com/lambrou/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lambrou/repo.svg?style=flat-square
-[forks-url]: https://github.com/lambrou/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/lambrou/repo.svg?style=flat-square
-[stars-url]: https://github.com/lambrou/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lambrou/repo.svg?style=flat-square
-[issues-url]: https://github.com/lambrou/repo/issues
-[license-shield]: https://img.shields.io/github/license/lambrou/repo.svg?style=flat-square
-[license-url]: https://github.com/lambrou/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/lambrou
-[product-screenshot]: images/screenshot.png
