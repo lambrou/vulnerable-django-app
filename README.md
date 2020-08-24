@@ -72,7 +72,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![VDA Screen Shot][product-screenshot]](https://github.com/lambrou/vulnerable-django-app/tree/master/vda/core/static/core/vdss.png)
+[![VDA Screen Shot][product-screenshot]](https://raw.githubusercontent.com/lambrou/vulnerable-django-app/master/vda/core/static/core/vdss.png)
 
 
 ### Built With
