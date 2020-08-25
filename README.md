@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** lambrou, VDA, twitter_handle, email
+*** lambrou, vulnerable-django-app, twitter_handle, email
 -->
 
 
@@ -22,34 +22,21 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/lambrou/VDA">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Vulnerable Django App</h3>
 
   <p align="center">
     An example of an extremely vulnerable Django application.
     <br />
-    <a href="https://github.com/lambrou/VDA"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     ·
-    <a href="https://github.com/lambrou/VDA/issues">Report Bug</a>
+    <a href="https://github.com/lambrou/vulnerable-django-app/issues">Report Bug</a>
     ·
-    <a href="https://github.com/lambrou/VDA/issues">Request Feature</a>
+    <a href="https://github.com/lambrou/vulnerable-django-app/issues">Request Feature</a>
   </p>
 </p>
 
@@ -72,8 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![VDA Screen Shot][product-screenshot]](https://raw.githubusercontent.com/lambrou/vulnerable-django-app/master/vda/core/static/core/vdss.png)
-
+![vulnerable-django-app](vda/core/static/core/vdss.png)
 
 ### Built With
 
@@ -98,7 +84,7 @@ pip install django
 
 1. Clone the repo
 ```sh
-git clone https://github.com/lambrou/VDA.git
+git clone https://github.com/lambrou/vulnerable-django-app.git
 ```
 2. Run the server
 ```sh
@@ -133,25 +119,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* [othneildrew](https://github.com/othneildrew/Best-README-Template)
-
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/lambrou/repo.svg?style=flat-square
-[contributors-url]: https://github.com/lambrou/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/lambrou/repo.svg?style=flat-square
-[forks-url]: https://github.com/lambrou/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/lambrou/repo.svg?style=flat-square
-[stars-url]: https://github.com/lambrou/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/lambrou/repo.svg?style=flat-square
-[issues-url]: https://github.com/lambrou/repo/issues
-[license-shield]: https://img.shields.io/github/license/lambrou/repo.svg?style=flat-square
-[license-url]: https://github.com/lambrou/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/lambrou
-[product-screenshot]: images/screenshot.png
+* [othneildrew](https://github.com/othneildrew/Best-README-Template) - For this wonderful README template.
