@@ -17,7 +17,6 @@ def index(request):
     return render(request, 'core/index.html', context)
 
 def signup(request):
-
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
@@ -29,7 +28,7 @@ def signup(request):
             return redirect('/')
     else:
         form = UserCreationForm()
-    return render(request, 'registration/signup.html')
+    return render(request, 'registration/signup.html', {"form":form})
 
 def profile(request):
     return render(request, 'user/profile.html', None)
